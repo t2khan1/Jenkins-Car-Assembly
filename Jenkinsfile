@@ -13,7 +13,6 @@ bat 'echo "body" >> build/car.txt' // body
 }
 stage('Test') {
 steps {
-bat 'test -o build/car.txt'
 bat 'find "chassis" * build/car.txt'    
 bat 'find "engine" * build/car.txt'
 bat 'find "body" * build/car.txt'
